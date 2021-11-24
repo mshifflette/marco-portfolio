@@ -1,13 +1,24 @@
 html {
     --section-background-color: linear-gradient(
       to bottom left,
-      rgba(17, 16, 16, 0.582),
-      rgba(12, 8, 24, 0.904)
+      rgba(23, 63, 18, 0.698),
+      rgba(0, 0, 0, 0.904)
     );
 }
-
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #000000 !important;
+}
+.main-name{
+  color: black;
+}
 /* --------- */
-/* About */
+/* Project */
 /* --------- */
 
 .about-section {
@@ -17,7 +28,34 @@ html {
     background-image: var(--section-background-color) !important;
     color: white !important;
   }
-
+  
+  .project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+  }
+  
+  .project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(5, 37, 12, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+  }
+  .project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(20, 97, 24, 0.561) !important;
+  }
+  .project-heading {
+    color: white !important;
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+    padding-top: 10px !important;
+  }
 /* --------- */
 /* Home */
 /* --------- */
@@ -30,14 +68,105 @@ html {
     color: white !important;
   }
 
+  .home-about-social {
+    text-align: center !important;
+    padding-top: 25px;
+    color: white !important;
+  }
+  
+  .home-about-social-links {
+    justify-content: center !important;
+    padding-top: 15px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+  }
+
+  .home-social-icons {
+    position: relative !important;
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    background: rgba(255, 255, 255, 0.972) !important;
+    border-radius: 50% !important;
+    transition: 0.5s !important;
+  }
+  
+  .home-social-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #68187a;
+    transition: 0.5s;
+    transform: scale(0.9);
+    z-index: -1;
+  }
+  
+  .home-social-icons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #801f95;
+  }
+  
+  .home-social-icons:hover {
+    color: #87209e;
+    box-shadow: 0 0 5px #87209e;
+    text-shadow: 0 0 2px #87209e;
+  }
+  
+  .social-icons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 /* --------- */
 /* About */
 /* --------- */
-
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
 .project-section {
     position: relative !important;
     padding-top: 110px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
+  }
+  .tech-icons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(0, 0, 0, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px rgba(1, 44, 12, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(28, 241, 0, 0.883) !important;
+  }
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
   }
