@@ -6,6 +6,7 @@ import { Nav, Navbar, Container,Col, Row} from 'react-bootstrap'
 import ProjectCard from "./ProjectCards";
 import tomadoggy from "../assets/tomadoggy.png";
 import thirsty from "../assets/thirsty.png";
+import tabletop from "../assets/tabletop.png";
 
 function Projects(){
     return(
@@ -18,6 +19,18 @@ function Projects(){
         <p className="d-flex justify-content-center" style={{ color: "white", fontSize:"2em" }}>
           Here are a few projects I've worked on recently.
         </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px", display: "flex" }}>
+          <Col className="project-card">
+            <ProjectCard
+              imgPath={tabletop}
+              
+              title="Table-Top"
+              description="Table-Top is a web application used to virtually play, and assist in the playing of Dungeons &amp; Dragons!"
+              link="https://table-top-fe.herokuapp.com/"
+            />
+          </Col>
+
+        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px", display: "flex" }}>
           <Col className="project-card">
             <ProjectCard
